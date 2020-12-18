@@ -1,0 +1,24 @@
+{
+  "name": "hugo_demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "curl -L -O https://github.com/gohugoio/hugo/releases/download/v0.55.6/hugo_0.55.6_Linux-64bit.tar.gz && tar -xzf hugo_0.55.6_Linux-64bit.tar.gz",
+    "build": "./hugo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zielke-biz/hugo_demo.git"
+  },
+  "keywords": [
+    "gohugo"
+  ],
+  "author": "sebastian@zielke.biz",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/zielke-biz/hugo_demo/issues"
+  },
+  "homepage": "https://github.com/zielke-biz/hugo_demo#readme"
+}
