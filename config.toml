@@ -1,4 +1,0 @@
-baseURL = "https://hugo-demo-szi.vercel.app/"
-languageCode = "en-us"
-title = "My New Hugo Site"
-theme = "ananke"
