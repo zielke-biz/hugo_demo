@@ -1,4 +1,4 @@
-baseURL: "http://wirfuerunserekinder.org/"
+baseURL: "https://gohugo.whale-songs.de"
 title: Wir für unsere Kinder
 paginate: 5
 theme: hugo-PaperMod
