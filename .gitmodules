@@ -4,3 +4,6 @@
 [submodule "themes/simplicity"]
 	path = themes/simplicity
 	url = https://github.com/eshlox/simplicity.git
+[submodule "themes/hugo-PaperMod"]
+	path = themes/hugo-PaperMod
+	url = https://github.com/wirfuerunserekinder/hugo-PaperMod
