@@ -1,0 +1,2 @@
+{{ $mainStyle := resources.Get "main.scss" | resources.ToCSS (dict "outputStyle" "compressed") | fingerprint }}
+<link rel="stylesheet" href="{{ $mainStyle.Permalink }}">

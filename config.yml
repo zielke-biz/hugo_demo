@@ -1,4 +1,4 @@
-baseURL: "https://gohugo.whale-songs.de"
+baseURL: "http://wirfuerunserekinder.org/"
 title: Wir für unsere Kinder
 paginate: 5
 theme: hugo-PaperMod
@@ -9,6 +9,8 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 
+defaultContentLanguage: de
+
 # googleAnalytics: UA-123-45
 
 minify:
@@ -18,52 +20,21 @@ minify:
 languages:
     de:
         languageName: "Deutsch"
-        weight: 1
-        title: wirfuerunserekinder
-        profileMode:
-            enabled: true
-            title: PaperMod
-            # imageUrl: "#"
-            # imageTitle: my image
-            # imageWidth: 120
-            # imageHeight: 120
-            subtitle: "☄️ Fast | ☁️ Fluent | 🌙 Smooth | 📱 Responsive"
-            buttons:
-                - name: Blog
-                  url: posts
-                - name: Tags
-                  url: tags
+        weight: 2  
         menu:
             main:
-                - name: Archive
-                  url: archives/
-                  weight: 5
-                - name: Tags
-                  url: tags
-                  weight: 10
-                - name: Categories
-                  url: categories
-                  weight: 10
-                - name: Series
-                  url: series
-                  weight: 10
-    en:
-        languageName: "English"
-        weight: 2
-        menu:
-            main:
-                - name: Archive
+                - name: Neues
+                  url: news
+                  weight: 1
+                - name: Archiv
                   url: archives
                   weight: 5
-                - name: Search
+                - name: Suche
                   url: search/
-                  weight: 10
-                - name: Tags
+                  weight: 2
+                - name: Index
                   url: tags/
-                  weight: 10
-                - name: Categories
-                  url: categories/
-                  weight: 10
+                  weight: 4
 
 
 outputs:
@@ -77,27 +48,58 @@ params:
     description: "Wir für unsere Kinder - wirfuerunserekinder.org"
     author: wirfuerunserekinder
     # author: ["Me", "You"] # multiple authors
-
+    ### OWN PARAMS
+    header_image_fil: "header_img.png"
+    ### END OWN PARAMS
     defaultTheme: auto
+    
     # disableThemeToggle: true
     ShowShareButtons: true
     ShowReadingTime: true
     # disableSpecial1stPost: true
     displayFullLangName: true
     # comments: false
-    images: ["qr-code.png"]
+    images: ["wirfuerunserekinder.jpg"]
 
     profileMode:
-        enabled: false
-        title: wirfuerunserekinder
-        imageUrl: "qr-code.png"
-        imageTitle: my image
+        enabled: true
+        title: Wir Für Unsere Kinder
+        subtitle: |  
+            🧸 Unsere Kinder brauchen UNS 🧸 -
+            starke Erwachsene, die sich schützend vor sie stellen. Wir Eltern und Familie stehen Seite an Seite und Hand in Hand zusammen. 
+            Wir wollen für unsere Kinder: 
+            🧡 ein unversehrtes Leben
+            💙 ein Recht auf unbeschwertes  
+                Aufwachsen in intakten 
+                sozialen Strukturen 
+
+            Unsere Kinder haben Recht auf:
+            💛 Lebensfreude 
+            ❤️ Empathie 
+            💚 gesunde und freie Entwicklung 
+
+            ❣️Unsere Kinder sind es wert,❣️
+            dass wir sie mit all unserer Liebe und unserer Kraft beschützen. 
+
+            Wir Menschen sind es wert, 
+            dass wir frei sind, Rechte haben und selbstbestimmt leben. 
+
+            🙋 Wir sind: 🙋
+            Eltern, Großeltern und noch viele mehr. Wir haben uns gefunden und gehen gemeinsam als Familie durch diese Zeit.
+            
+
+        imageUrl: "wirfuerunserekinder.jpg"
+        imageTitle: wirfuerunserekinder logo
         # imageWidth: 120
         # imageHeight: 120
         buttons:
-            - name: Archives
+            - name: Inhalt
+              url: topics
+            - name: Neues
+              url: news
+            - name: Archiv
               url: archives
-            - name: Tags
+            - name: Index
               url: tags
 
     homeInfoParams:
@@ -113,21 +115,21 @@ params:
         - name: RsS
           url: "index.xml"
 
-    # label:
-    #     text: "Home"
-    #     icon: icon.png
-    #     iconHeight: 35
+    label:
+        text: "Home"
+        icon: "favicon.ico"
+        iconHeight: 32
 
     # analytics:
     #     google:
     #         SiteVerificationTag: "XYZabc"
 
-    # assets:
-    #     favicon: "<link / abs url>"
-    #     favicon16x16: "<link / abs url>"
-    #     favicon32x32: "<link / abs url>"
-    #     apple_touch_icon: "<link / abs url>"
-    #     safari_pinned_tab: "<link / abs url>"
+    assets:
+        favicon: "favicon.ico"
+        favicon16x16: "favicon.ico"
+        favicon32x32: "favicon.ico"
+        apple_touch_icon: "favicon.ico"
+        safari_pinned_tab: "favicon.ico"
 
     # cover:
     #     hidden: true # hide everywhere but not in structured data
